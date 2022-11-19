@@ -1,6 +1,11 @@
 import React from "react";
 
-
-const Title = (props) => <h1>{props.appName}</h1>;
+function Title(props) {
+  return (
+    <div>
+      <h1>{props.appName}</h1>
+    </div>
+  );
+}
 
 export default Title;

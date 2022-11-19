@@ -3,12 +3,13 @@ import Title from "./Title";
 
 
 
-const Logo = () => {
-  const appName = "Pokedex";
+const Logo = (props) => {
+
+console.log(props);
   return (
-    <header>
-      <Title appName={appName} fabulous="true" />
-    </header>
+    <div>
+      <Title appName={props.appName} />
+    </div>
   );
 };
 console.log();

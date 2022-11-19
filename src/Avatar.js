@@ -1,11 +1,15 @@
 import React from "react";
 
-const Avatar = () => {
+const Avatar = (props) => {
   return (
-    <img
-      src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
-      alt=""
-    />
+    <div>
+      <h2>{props.msg}</h2>
+      <img
+        onClick={props.doWhenClicked}
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+        alt=""
+      />{" "}
+    </div>
   );
 };
 

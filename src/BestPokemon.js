@@ -1,13 +1,13 @@
 import React from "react";
 
-const BestPokemon = (probs) => {
-  const { abilities } = probs;
+const BestPokemon = (props) => {
+  const { abilities } = props;
   return (
     <div>
       <p>"My favorite Pokemon is Squirtle"</p>
       <ul>
-        {abilities.map((abl) => (
-          <li>{abl}</li>
+        {abilities.map((abl, index) => (
+          <li key={index}>{abl}</li>
         ))}
       </ul>
     </div>

@@ -7,14 +7,25 @@ import CaughtPokemon from "./CaughtPokemon";
 import Avatar from "./Avatar";
 import Title from "./Title";
 
+
+
 const App = () => {
+
+function logWhenClicked() {
+  console.log("Hey!");
+}
+
+function myclick2() {
+  console.log("I'm the other avatar");
+}
   return (
     <div>
-      <Logo name="Pokedex" />
+      <Title appName={"Pokedex"} />
+      <Logo  />
       <BestPokemon abilities={["Anticipation", "Adaptability", "Run-Away"]} />
-      <CaughtPokemon date = {new Date().toLocaleDateString()}/>
-      <Avatar />
-      <Title />
+      <CaughtPokemon date={new Date().toLocaleDateString()} />
+      <Avatar doWhenClicked={logWhenClicked} msg="Hi" />
+      <Avatar doWhenClicked={myclick2} msg="Hi" />
     </div>
   );
 };
