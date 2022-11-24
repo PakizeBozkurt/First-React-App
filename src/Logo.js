@@ -1,17 +1,16 @@
 import React from "react";
-import Title from "./Title";
-
-
 
 const Logo = (props) => {
-
-console.log(props);
   return (
-    <div>
-      <Title appName={props.appName} />
-    </div>
+    <header>
+      <h1>Welcome to the {props.appName}</h1>
+      <img
+        onClick={props.doWhenClicked}
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+        alt="pokedex"
+      ></img>
+    </header>
   );
 };
-console.log();
 
 export default Logo;
