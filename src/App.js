@@ -4,6 +4,9 @@ import "./App.css";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import Logo from "./Logo";
+import PokemonMovies from "./PokemonMovies";
+import PokemonSelectorMoves from "./PokemonSelectorMoves";
+import PokemonCity from "./PokemonCity";
 
 
 const appName = "Pokedex";
@@ -19,6 +22,9 @@ const date = new Date().toLocaleDateString();
         <Logo appName={appName} click={doWhenClicked} />
         <BestPokemon abilities={abilities} />
         <CaughtPokemon date={date} />
+        <PokemonMovies />
+        <PokemonSelectorMoves />
+        <PokemonCity />
       </div>
     );
   }
