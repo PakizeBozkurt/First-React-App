@@ -1,5 +1,5 @@
  import React, {useEffect, useState} from 'react';
-//import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
+
 
  function PokemonMovies(props) {
      const[pokemonData, setpokemonData] = useState(null);
